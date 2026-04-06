@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-container": "#1b3022",
+                    "surface-dim": "#dcdad5",
+                    "surface-tint": "#4d6453",
+                    "tertiary": "#735c00",
+                    "error-container": "#ffdad6",
+                    "on-primary-container": "#819986",
+                    "background": "#fcf9f4",
+                    "surface-container-lowest": "#ffffff",
+                    "outline-variant": "#c3c8c1",
+                    "primary": "#061b0e",
+                    "surface-container": "#f0ede8",
+                    "on-surface": "#1c1c19",
+                    "on-secondary-fixed": "#0b2013",
+                    "inverse-surface": "#31302d",
+                    "on-tertiary": "#ffffff",
+                    "error": "#ba1a1a",
+                    "tertiary-fixed-dim": "#e9c349",
+                    "secondary-fixed-dim": "#b4cdb8",
+                    "primary-fixed-dim": "#b4cdb8",
+                    "on-tertiary-fixed": "#241a00",
+                    "on-primary-fixed-variant": "#364c3c",
+                    "tertiary-container": "#cba72f",
+                    "surface-container-low": "#f6f3ee",
+                    "on-secondary": "#ffffff",
+                    "on-background": "#1c1c19",
+                    "on-surface-variant": "#434843",
+                    "on-secondary-fixed-variant": "#364c3c",
+                    "surface": "#fcf9f4",
+                    "on-primary-fixed": "#0b2013",
+                    "outline": "#737973",
+                    "on-tertiary-fixed-variant": "#574500",
+                    "primary-fixed": "#d0e9d4",
+                    "secondary": "#4e6453",
+                    "inverse-primary": "#b4cdb8",
+                    "secondary-container": "#d0e9d4",
+                    "surface-bright": "#fcf9f4",
+                    "secondary-fixed": "#d0e9d4",
+                    "on-error": "#ffffff",
+                    "on-tertiary-container": "#4e3d00",
+                    "on-secondary-container": "#536a59",
+                    "surface-container-highest": "#e5e2dd",
+                    "tertiary-fixed": "#ffe088",
+                    "surface-variant": "#e5e2dd",
+                    "surface-container-high": "#ebe8e3",
+                    "on-primary": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "inverse-on-surface": "#f3f0eb"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #fcf9f4;
+            font-family: 'Manrope', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+        .serif-text {
+            font-family: 'Noto Serif', serif;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 350px);
+            gap: 1.5rem;
+        }
+        @media (max-width: 1024px) {
+            .bento-grid {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: auto;
+            }
+        }
+        @media (max-width: 640px) {
+            .bento-grid {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+            }
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="text-on-surface">
+<!-- TopAppBar Component -->
+<header class="bg-[#fcf9f4]/80 dark:bg-[#061b0e]/80 backdrop-blur-md text-[#061b0e] dark:text-[#fcf9f4] docked full-width top-0 sticky z-50 shadow-[0_4px_40px_-15px_rgba(28,28,25,0.04)] flex justify-between items-center px-6 h-20 w-full transition-opacity duration-300 ease-in-out">
+<div class="flex items-center gap-4">
+<button class="hover:opacity-70 transition-opacity">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+<div class="font-serif tracking-[0.2em] text-xl text-[#061b0e] dark:text-[#fcf9f4] uppercase">
+            BOTANICAL LUXE
+        </div>
+<div class="flex items-center gap-4">
+<button class="hover:opacity-70 transition-opacity">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+</button>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-6 py-12 mb-32">
+<!-- Header Section -->
+<section class="mb-16">
+<p class="font-label text-xs uppercase tracking-[0.2em] text-tertiary mb-3">Curated Collections</p>
+<h1 class="serif-text text-5xl md:text-6xl font-normal text-primary tracking-tight leading-tight">Elevate Your Space <br/>with Nature's Imitation</h1>
+</section>
+<!-- Bento Grid Layout -->
+<div class="bento-grid">
+<!-- Category 1: Artificial Trees (Large) -->
+<div class="col-span-2 row-span-2 group relative overflow-hidden rounded-xl bg-surface-container-low cursor-pointer transition-transform duration-500 hover:scale-[0.99]">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Luxurious tall artificial fiddle leaf fig tree in a modern concrete planter standing in a minimalist bright sunlit living room corner" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEBLRO2mKElM3GCtFYORV0UUSc9euMMUP9cOo_ZCUJpkUazlYFAJCW2NZOn_2QYsL9WU36TGM-gxtdKfuu5bRbMva4h278-fBP4ApW0QTMszo5tX8ZSNp4p1EYjBFDoffcUKybATkolrsHPaJJzfWH_OAjbNWc1PrMvZtnm9wJhzTEbXvGiMBgAbHLatdKq14956kZiuh27LfQTDVnuuq2rRmyUj-ptrfqxuZZCHv7eVAhutGL4i6ZEB-Q3uKpJZJ0sCVbkG8CEKo"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent"></div>
+<div class="absolute bottom-8 left-8 right-8 p-8 backdrop-blur-md bg-white/20 rounded-xl border border-white/10 flex justify-between items-end">
+<div>
+<h2 class="serif-text text-3xl text-white mb-2">Artificial Trees</h2>
+<p class="text-white/80 font-body text-sm tracking-wide">Majestic statements for vertical grandeur.</p>
+</div>
+<span class="material-symbols-outlined text-white text-3xl" data-icon="arrow_outward">arrow_outward</span>
+</div>
+</div>
+<!-- Category 2: Table Plants -->
+<div class="col-span-2 row-span-1 group relative overflow-hidden rounded-xl bg-surface-container-low cursor-pointer transition-transform duration-500 hover:scale-[0.99]">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Small elegant artificial succulent in a white ceramic pot on a clean oak desk with soft morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6NMNm58K0EsZ4cRnF7U4nblLjQOErKSe0_IfJj3XmEgKr9oWTXP6PPBP8F8DILROhSQpNQ6i9E8mmDJPiW_j5Zc3vK8UvB6Z3qz7QUJpGhBgYdWLLKDXPvfgdwINeajvg-gqg6EwoGEx3KUCaNEZW5A31M6Irk19MBpugSlRARd69JR5_ujEBs63XC0k2cp-BwpQwLLq4uiENzs4NoLTdFoWwZaL05O_KSeRDy6nnhl_cEeA61zPmMkMVosPMxryFxh-GTC1yWaU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6 p-6 backdrop-blur-md bg-white/20 rounded-xl border border-white/10 flex justify-between items-center">
+<h2 class="serif-text text-2xl text-white">Table Plants</h2>
+<span class="material-symbols-outlined text-white" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+<!-- Category 3: Outdoor Collections -->
+<div class="col-span-1 row-span-1 group relative overflow-hidden rounded-xl bg-surface-container-low cursor-pointer transition-transform duration-500 hover:scale-[0.99]">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="UV-resistant artificial boxwood hedges and topiary balls on a luxury stone patio terrace overlooking a garden" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvhtSvmGneWu4zid9UxKJ-sKVSvUc8fP9DESLK3ttLz0Artoll7euONmIrqv7gEBD1NXHlvrt_O4KSZqNdkaE3yYwi0OYbAqNLIQBJ8JQY80Caflrfa8M6dASD158dGjLAVKUAL_qe2qaJlwF6mjjA2VPGXzsLFcI7xkFu2LXk6tWGU0vzkak9iiuYBBCkq16L8PtVAQkFEZOIjstFvgPxIKXWyFWDdKRJymFDs6zK6TtnvUWvNoqCGkF4UGQtSDMo-A4f9fJ23Yk"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4 p-4 backdrop-blur-md bg-white/10 rounded-xl border border-white/5">
+<h2 class="serif-text text-xl text-white">Outdoor Collections</h2>
+</div>
+</div>
+<!-- Category 4: Luxury Pots -->
+<div class="col-span-1 row-span-1 group relative overflow-hidden rounded-xl bg-surface-container-low cursor-pointer transition-transform duration-500 hover:scale-[0.99]">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Collection of handmade matte ceramic and textured stone planters in earthy tones arranged on a minimalist shelf" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_u7JgPZETaUhT9KLG5PwEqLjJ7wz3L0cKgTAP2Sl4atGl_pR6ZMSbrChS1U9w0Gf-E9NDhBSHTcdDR4AUyHf52Va5PLdGY2CBkuxwEEYULPVEsUjhqrDJFRjKey0kFmjBGu1kCV0ICVfTn9cC8p8VM1AJKZ8OC_vubKt0gxSSCuJXR382kkJ-gfxf4-nETIg-kMugG-dFYFI6OBS55P_1yJhzYQH8Kf_wc8BAFkcd9AvDCVaxKWhIj7yFyK3dNdB2n_uadDfMcEg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4 p-4 backdrop-blur-md bg-white/10 rounded-xl border border-white/5">
+<h2 class="serif-text text-xl text-white">Luxury Pots</h2>
+</div>
+</div>
+</div>
+<!-- Featured Section: Floral Arrangements (Wide Asymmetric) -->
+<section class="mt-24 grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+<div class="md:col-span-5 order-2 md:order-1">
+<p class="font-label text-xs uppercase tracking-[0.2em] text-tertiary mb-4">Timeless Beauty</p>
+<h2 class="serif-text text-4xl mb-6 text-primary">Floral Arrangements</h2>
+<p class="text-on-surface-variant font-body leading-relaxed mb-8">Masterfully crafted petals that never fade. Our floral collection brings the eternal essence of spring to your dining room or entryway with zero maintenance.</p>
+<button class="bg-primary text-on-primary px-10 py-4 rounded-xl font-body font-medium flex items-center gap-3 hover:bg-primary-container transition-colors group">
+                    Explore Florals
+                    <span class="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform" data-icon="trending_flat">trending_flat</span>
+</button>
+</div>
+<div class="md:col-span-7 order-1 md:order-2">
+<div class="rounded-xl overflow-hidden aspect-[4/3] relative">
+<img class="w-full h-full object-cover" data-alt="Stunning artificial floral arrangement with white lilies and eucalyptus in a gold tinted glass vase on a dark marble table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuiufeIESRhnrBHFMywgRbTOl6iX8cotaRRa5ctDlD4sV7qXVXN_GRJhcUCPoSm-iepTA9hHFmNAmkQu-RXb7Is7W3Gg_qKWNYjpQhIFdlLPQ1IPV0AJp4MqWKOcgGYZSnx_cIZ7uDPYDksTV9Vb1yRoSwhFYnqbg-eNbuCOx0IZGHDHRYRfeWol7pEmgNnZmbm3JhHqJm9RO4Ni5cauaN1d7xb0ZOE0M0GG4uEJALYMb00zEkxj_DzmqN1OkKhtXExFXX5_8gJ9U"/>
+<div class="absolute top-8 right-8 bg-tertiary-container text-on-tertiary-container px-6 py-2 rounded-full text-xs font-bold uppercase tracking-widest">
+                        New Arrival
+                    </div>
+</div>
+</div>
+</section>
+<!-- Subtle Text Section -->
+<section class="mt-32 text-center max-w-2xl mx-auto px-4">
+<span class="material-symbols-outlined text-tertiary text-4xl mb-6" data-icon="eco">eco</span>
+<h3 class="serif-text text-2xl text-primary mb-4 italic">"Nature redefined for the modern urban dweller."</h3>
+<p class="text-on-surface-variant text-sm tracking-wide leading-loose">All our botanicals are crafted from high-grade polymers and silk blends, ensuring a hyper-realistic texture that withstands the test of time and light.</p>
+</section>
+</main>
+<!-- BottomNavBar Component -->
+<nav class="fixed bottom-0 left-0 w-full z-50 bg-[#fcf9f4]/90 dark:bg-[#061b0e]/90 backdrop-blur-xl shadow-[0_-10px_40px_-15px_rgba(28,28,25,0.06)] rounded-t-[3rem] flex justify-around items-center px-4 pt-3 pb-6">
+<a class="flex flex-col items-center justify-center text-[#1c1c19]/60 dark:text-[#fcf9f4]/60 hover:scale-110 transition-transform" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="home">home</span>
+<span class="font-sans text-[10px] font-medium uppercase tracking-wider">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#735c00] dark:text-[#cba72f] font-semibold hover:scale-110 transition-transform" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="grid_view" style="font-variation-settings: 'FILL' 1;">grid_view</span>
+<span class="font-sans text-[10px] font-medium uppercase tracking-wider">Catalog</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#1c1c19]/60 dark:text-[#fcf9f4]/60 hover:scale-110 transition-transform" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="shopping_bag">shopping_bag</span>
+<span class="font-sans text-[10px] font-medium uppercase tracking-wider">Cart</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#1c1c19]/60 dark:text-[#fcf9f4]/60 hover:scale-110 transition-transform" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="favorite">favorite</span>
+<span class="font-sans text-[10px] font-medium uppercase tracking-wider">Wishlist</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#1c1c19]/60 dark:text-[#fcf9f4]/60 hover:scale-110 transition-transform" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="person">person</span>
+<span class="font-sans text-[10px] font-medium uppercase tracking-wider">Profile</span>
+</a>
+</nav>
+</body></html>

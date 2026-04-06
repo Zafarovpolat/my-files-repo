@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary": "#ffffff",
+                    "on-primary-fixed": "#002205",
+                    "on-tertiary-fixed": "#251a07",
+                    "on-tertiary-fixed-variant": "#53452e",
+                    "surface-container": "#eeeee9",
+                    "on-primary-fixed-variant": "#1e5122",
+                    "tertiary-container": "#61523a",
+                    "inverse-primary": "#9cd597",
+                    "on-primary-container": "#9fd79a",
+                    "surface-container-low": "#f4f4ef",
+                    "secondary-container": "#fdc39a",
+                    "primary-fixed-dim": "#9cd597",
+                    "primary-container": "#2c5f2e",
+                    "on-secondary-fixed": "#301400",
+                    "error-container": "#ffdad6",
+                    "on-secondary-container": "#794e2e",
+                    "secondary-fixed-dim": "#f4bb92",
+                    "on-tertiary-container": "#dbc6a8",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-tint": "#366937",
+                    "on-secondary": "#ffffff",
+                    "surface-dim": "#dadad6",
+                    "surface-container-highest": "#e2e3de",
+                    "on-primary": "#ffffff",
+                    "surface-container-high": "#e8e8e4",
+                    "on-surface-variant": "#41493f",
+                    "secondary-fixed": "#ffdcc5",
+                    "on-surface": "#1a1c19",
+                    "background": "#fafaf5",
+                    "tertiary": "#493b25",
+                    "surface-bright": "#fafaf5",
+                    "secondary": "#805533",
+                    "on-error-container": "#93000a",
+                    "primary": "#124719",
+                    "inverse-surface": "#2f312e",
+                    "outline": "#72796e",
+                    "on-secondary-fixed-variant": "#653d1e",
+                    "outline-variant": "#c1c9bc",
+                    "tertiary-fixed": "#f6dfc0",
+                    "error": "#ba1a1a",
+                    "on-error": "#ffffff",
+                    "on-background": "#1a1c19",
+                    "primary-fixed": "#b7f1b1",
+                    "surface-variant": "#e2e3de",
+                    "surface": "#fafaf5",
+                    "inverse-on-surface": "#f1f1ec",
+                    "tertiary-fixed-dim": "#d9c4a5"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-shadow {
+            box-shadow: 0 12px 32px -4px rgba(47, 49, 46, 0.06);
+        }
+        .ghost-border {
+            border: 1px solid rgba(193, 201, 188, 0.15);
+        }
+        .care-chip-border {
+            border: 1px solid rgba(139, 94, 60, 0.15);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background font-body text-on-surface mb-24 overflow-x-hidden">
+<!-- Top Navigation Shell -->
+<header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-stone-950/80 backdrop-blur-md flex justify-between items-center px-6 h-16 w-full">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-emerald-900 dark:text-emerald-500 scale-95 active:transition-all cursor-pointer hover:opacity-80 transition-opacity" data-icon="language">language</span>
+<span class="text-xl font-bold text-emerald-900 dark:text-stone-100 font-headline tracking-tight">DecorHouse</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-emerald-900 dark:text-emerald-500 scale-95 active:transition-all cursor-pointer hover:opacity-80 transition-opacity" data-icon="search">search</span>
+</div>
+</header>
+<main class="pt-16 max-w-screen-xl mx-auto">
+<!-- Asymmetric Editorial Gallery -->
+<section class="px-6 mt-8 flex flex-col md:flex-row gap-4">
+<div class="w-full md:w-2/3">
+<div class="aspect-[4/5] overflow-hidden rounded-[24px] editorial-shadow">
+<img alt="Monstera Deliciosa close up" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" data-alt="Close-up of a vibrant green Monstera Deliciosa leaf with natural fenestrations in soft morning sunlight against a neutral studio background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsjigT2Xp-q4062OmK_5yBpzdk77dEGjG5UL5ZnX6RCY1mbUwuJQMliVXxOKoEHZrUwUDkM2p-ZqTsI6cZvb8yKZQK_nt1DVDCWuuFnjG01G8HljZ_jyHF-tLu2NnQmZaFjYd1HuPeM_2nGvLPWnUcbmho2r5E72iMrEZkknuYrSNFCHj1vbx3ryd_tj1mAfEVefliF55Opdlr776vTZvmouzP8IsiRLSIq-zAstQjiC_ctJo3IW-1l1gCEacON1eDhZH_0BpyTkA"/>
+</div>
+</div>
+<div class="flex md:flex-col gap-4 overflow-x-auto no-scrollbar">
+<div class="w-32 h-32 md:w-40 md:h-40 flex-shrink-0 rounded-[20px] overflow-hidden ghost-border">
+<img alt="Monstera Deliciosa detail" class="w-full h-full object-cover" data-alt="Detailed shot of Monstera Deliciosa aerial roots and stem texture in warm interior lighting with soft shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACHz04JKTbKgs6r0wTj1caWI-9gyLGd66xDpVfyyxmTsFoi5_-a_oIyD1K0OxnKXXTIAoytpIEYd8iZhecsguWr_Ygew19QhauTE46V4wBr61dTE1cKQbREG1zVzszLdkJUJM-p4OWnzLIX6FNKod-HioC5eyNDE_YErR6E5oW6qnqDFsadotdcxRxJH6-hljt6aaVE--l3hOpgjxBdGw4P3TlS_VOebXAc0HIYErFSEUJwHIBEWFFFUcdZTuybrBkgVc6nB2YWgc"/>
+</div>
+<div class="w-32 h-32 md:w-40 md:h-40 flex-shrink-0 rounded-[20px] overflow-hidden ghost-border">
+<img alt="Monstera Deliciosa lifestyle" class="w-full h-full object-cover" data-alt="Lush Monstera Deliciosa plant in a minimalist terracotta pot sitting on a hardwood floor in a sunlit corner of a modern apartment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCM9rKOEaJndKXWuacUs81zTnT-fLeM0MG9LOs1zdQxZ_Od3ZXSSbGefiSrn9CinLCg6yZTJsx8ijvLzaG5DbucnxCJs1cDadDTb8wIY5nKKOrgMWPcxc77P5c7N5S4RiMiWtpVWVDIP3n4PTs6GWSMgo_4eoCktHZdArSAl3WHvnbPIjKXdKgriTEXwVPRPbRlsVJZmEBdRx5vm-ed6LBNMZaSaQrXRnVjJAZzWJspF2UP5HDbaCGeEdgAaFx2_UMGWTEcCJU-8Xw"/>
+</div>
+</div>
+</section>
+<!-- Product Details Content -->
+<section class="px-6 mt-10">
+<div class="flex flex-col md:flex-row md:justify-between md:items-end gap-4 mb-6">
+<div>
+<h1 class="font-headline text-3xl font-medium tracking-tight text-[#1C1C1C]">Monstera Deliciosa</h1>
+<div class="flex items-center gap-3 mt-2">
+<span class="font-headline text-2xl font-bold text-secondary">USD 45.00</span>
+<span class="text-[#9E8E83] line-through text-lg">USD 58.00</span>
+<div class="bg-secondary-container/30 px-3 py-1 rounded-full text-on-secondary-container text-xs font-bold font-label tracking-wider uppercase">20% OFF</div>
+</div>
+</div>
+<!-- Quantity Selector Pill -->
+<div class="flex items-center border-2 border-secondary rounded-full p-1 w-fit bg-surface-container-lowest editorial-shadow">
+<button class="w-10 h-10 flex items-center justify-center text-secondary active:scale-90 transition-transform">
+<span class="material-symbols-outlined">remove</span>
+</button>
+<span class="px-4 font-bold text-secondary font-label min-w-[40px] text-center">1</span>
+<button class="w-10 h-10 flex items-center justify-center text-secondary active:scale-90 transition-transform">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+</div>
+<div class="grid md:grid-cols-2 gap-12 mt-8">
+<div>
+<h3 class="font-headline font-bold text-on-surface mb-4 uppercase tracking-widest text-xs">Description</h3>
+<p class="text-[#6B5B4E] leading-relaxed mb-8">
+                        The Monstera Deliciosa, often called the "Swiss Cheese Plant," is a botanical masterpiece for any interior. Known for its iconic heart-shaped leaves that develop dramatic splits as they mature, this plant brings an instant tropical editorial feel to your space.
+                    </p>
+<div class="flex flex-wrap gap-3">
+<div class="care-chip-border bg-[rgba(139,94,60,0.06)] px-4 py-2 rounded-full text-[#6B5B4E] text-xs font-medium font-label flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">height</span>
+                            Large (60-80cm)
+                        </div>
+<div class="care-chip-border bg-[rgba(139,94,60,0.06)] px-4 py-2 rounded-full text-[#6B5B4E] text-xs font-medium font-label flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">light_mode</span>
+                            Indirect Light
+                        </div>
+<div class="care-chip-border bg-[rgba(139,94,60,0.06)] px-4 py-2 rounded-full text-[#6B5B4E] text-xs font-medium font-label flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">water_drop</span>
+                            Weekly Water
+                        </div>
+</div>
+</div>
+<!-- Wholesale Table Section -->
+<div class="bg-surface-container-low rounded-[24px] p-6 ghost-border">
+<h3 class="font-headline font-bold text-on-surface mb-6 uppercase tracking-widest text-xs flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px]">local_shipping</span>
+                        Wholesale Tiers
+                    </h3>
+<div class="space-y-1">
+<div class="flex justify-between items-center px-4 py-3 rounded-xl transition-all">
+<span class="text-on-surface-variant font-medium">1 - 5 units</span>
+<span class="text-on-surface font-bold">USD 45.00</span>
+</div>
+<div class="flex justify-between items-center px-4 py-3 rounded-xl bg-[rgba(139,94,60,0.08)] border-l-[3px] border-secondary">
+<div>
+<span class="text-secondary font-bold block">6 - 20 units</span>
+<span class="text-[10px] text-secondary/70 uppercase font-bold tracking-tight">Recommended for Studios</span>
+</div>
+<div class="text-right">
+<span class="text-secondary font-bold block">USD 38.50</span>
+<span class="text-[10px] text-secondary font-bold uppercase tracking-widest">15% Discount</span>
+</div>
+</div>
+<div class="flex justify-between items-center px-4 py-3 rounded-xl transition-all">
+<span class="text-on-surface-variant font-medium">21+ units</span>
+<div class="text-right">
+<span class="text-on-surface font-bold block">USD 32.00</span>
+<span class="text-[10px] text-secondary font-bold uppercase tracking-widest">30% Discount</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Signature Editorial Block -->
+<section class="px-6 my-16">
+<div class="relative overflow-hidden rounded-[32px] bg-primary-container p-8 md:p-12 text-on-primary-container">
+<div class="relative z-10 max-w-xl">
+<h2 class="font-headline text-3xl font-extrabold mb-4 leading-tight">Elevate your office sanctuary with architectural greenery.</h2>
+<p class="text-on-primary-container/80 text-lg mb-8 font-body">Connect with our botanical curators for personalized styling advice and custom ceramic pairings.</p>
+<button class="bg-secondary-container text-on-secondary-container px-8 py-4 rounded-xl font-label font-bold uppercase tracking-wider text-sm hover:opacity-90 transition-all active:scale-95">
+                        Inquire Now
+                    </button>
+</div>
+<div class="absolute top-0 right-0 h-full w-1/2 opacity-20 pointer-events-none">
+<span class="material-symbols-outlined text-[400px] absolute -right-20 -top-20" style="font-variation-settings: 'FILL' 1;">eco</span>
+</div>
+</div>
+</section>
+<!-- Add to Cart CTA Container (Floating on Scroll behavior implied) -->
+<section class="px-6 py-8 md:flex md:justify-center">
+<button class="w-full md:max-w-md h-16 bg-gradient-to-br from-primary to-primary-container text-white rounded-xl font-label font-bold uppercase tracking-widest text-sm shadow-xl flex items-center justify-center gap-3 active:scale-95 transition-all">
+<span class="material-symbols-outlined">shopping_bag</span>
+                Add to Cart
+            </button>
+</section>
+</main>
+<!-- Bottom Navigation Shell -->
+<nav class="fixed bottom-0 w-full z-50 bg-white/90 dark:bg-stone-950/90 backdrop-blur-lg rounded-t-3xl shadow-[0_-4px_20px_rgba(47,49,46,0.04)] flex justify-around items-center pt-3 pb-6 px-4 w-full">
+<div class="flex flex-col items-center text-stone-400 dark:text-stone-600 hover:text-amber-700 transition-colors cursor-pointer active:scale-90">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="text-[10px] font-['Inter'] font-semibold uppercase tracking-wider">Home</span>
+</div>
+<div class="flex flex-col items-center text-stone-400 dark:text-stone-600 hover:text-amber-700 transition-colors cursor-pointer active:scale-90">
+<span class="material-symbols-outlined" data-icon="potted_plant">potted_plant</span>
+<span class="text-[10px] font-['Inter'] font-semibold uppercase tracking-wider">Catalog</span>
+</div>
+<div class="flex flex-col items-center text-amber-800 dark:text-amber-500 relative before:content-[''] before:absolute before:-top-2 before:w-3 before:h-[2px] before:bg-amber-700 cursor-pointer active:scale-90">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+<span class="text-[10px] font-['Inter'] font-semibold uppercase tracking-wider">Cart</span>
+</div>
+<div class="flex flex-col items-center text-stone-400 dark:text-stone-600 hover:text-amber-700 transition-colors cursor-pointer active:scale-90">
+<span class="material-symbols-outlined" data-icon="favorite">favorite</span>
+<span class="text-[10px] font-['Inter'] font-semibold uppercase tracking-wider">Favorites</span>
+</div>
+<div class="flex flex-col items-center text-stone-400 dark:text-stone-600 hover:text-amber-700 transition-colors cursor-pointer active:scale-90">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="text-[10px] font-['Inter'] font-semibold uppercase tracking-wider">Profile</span>
+</div>
+</nav>
+</body></html>
